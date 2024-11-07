@@ -222,3 +222,19 @@ ul.row {
 .social-link > svg {
     fill: var(--text-color);
 }
+
+.card-services .card-title {
+    margin: 0;
+}
+
+.card-services .a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+.card-services .a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+}
