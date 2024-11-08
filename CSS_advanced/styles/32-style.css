@@ -125,11 +125,11 @@ a:active {
 }
 
 .button:hover {
+    transition: var(--transition-duration);
+    transition: color var(--transition-duration), background-color var(--transition-duration);
     background: var(--button-hover-background);
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
-    transition: var(--transition-duration);
-    transition: color var(--transition-duration), background-color var(--transition-duration);
 }
 
 .visually-hidden {
@@ -340,11 +340,11 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     left: 0;
+    transition: all var(--transition-duration) var(--transition-cubic-bezier);
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
     content: "";
-    transition: all var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
